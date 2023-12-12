@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://bk74sei7c0xxg"]
+
+[ext_resource type="Script" path="res://components/grid_tile.gd" id="1_pwgus"]
+[ext_resource type="PackedScene" uid="uid://bp8xn5b0y34kh" path="res://components/grid_detector.tscn" id="2_6lmfa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_myqtg"]
+size = Vector2(112, 112)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4mes"]
+size = Vector2(120, 120)
+
+[node name="GridTile" type="StaticBody2D"]
+collision_layer = 9
+collision_mask = 0
+script = ExtResource("1_pwgus")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0.392157)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_myqtg")
+
+[node name="GridDetectorLeft" parent="." instance=ExtResource("2_6lmfa")]
+position = Vector2(-80, 0)
+
+[node name="GridDetectorRight" parent="." instance=ExtResource("2_6lmfa")]
+position = Vector2(80, 0)
+
+[node name="GridDetectorUp" parent="." instance=ExtResource("2_6lmfa")]
+position = Vector2(0, -80)
+
+[node name="GridDetectorDown" parent="." instance=ExtResource("2_6lmfa")]
+position = Vector2(0, 80)
+
+[node name="Hints" type="Control" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 3
+anchors_preset = 0
+offset_left = -40.0
+offset_top = -48.0
+offset_right = -16.0
+offset_bottom = -16.0
+
+[node name="LabelHint" type="Label" parent="Hints"]
+layout_mode = 0
+offset_left = -8.0
+offset_right = 88.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0.862745, 0.862745, 0.862745, 1)
+theme_override_font_sizes/font_size = 28
+text = "- - -"
+autowrap_mode = 1
+
+[node name="Tile" type="Area2D" parent="."]
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tile"]
+shape = SubResource("RectangleShape2D_r4mes")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c54pk7dg48fxa"]
+
+[ext_resource type="PackedScene" uid="uid://bk74sei7c0xxg" path="res://components/grid_tile.tscn" id="1_qpltu"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="GridTile" parent="." instance=ExtResource("1_qpltu")]
+
+[node name="GridTile2" parent="." instance=ExtResource("1_qpltu")]
+position = Vector2(128, 0)

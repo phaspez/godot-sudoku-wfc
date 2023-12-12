@@ -1,0 +1,12 @@
+res://components/grid_detector.tscn
+res://components/grid_detector.gd
+res://components/grid_number.tscn
+res://components/grid_tile.tscn
+res://components/grid_tile.gd
+res://components/3x_3_grid.tscn
+res://components/3x_3_grid.gd
+res://main.tscn
+res://main.gd
+res://components/thisisstupid.tscn
+res://components/four_direction_detector.gd
+res://components/four_direction_detector.tscn

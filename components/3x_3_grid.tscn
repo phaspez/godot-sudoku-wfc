@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://b08bws86vnw0f"]
+
+[ext_resource type="Script" path="res://components/3x_3_grid.gd" id="1_v1h5i"]
+
+[node name="3x3Grid" type="Node2D"]
+script = ExtResource("1_v1h5i")
+
+[node name="Positions" type="Node2D" parent="."]
+
+[node name="1" type="Node2D" parent="Positions"]
+
+[node name="2" type="Node2D" parent="Positions"]
+position = Vector2(0, -128)
+
+[node name="3" type="Node2D" parent="Positions"]
+position = Vector2(128, -128)
+
+[node name="4" type="Node2D" parent="Positions"]
+position = Vector2(128, 0)
+
+[node name="5" type="Node2D" parent="Positions"]
+position = Vector2(128, 128)
+
+[node name="6" type="Node2D" parent="Positions"]
+position = Vector2(0, 128)
+
+[node name="7" type="Node2D" parent="Positions"]
+position = Vector2(-128, 128)
+
+[node name="8" type="Node2D" parent="Positions"]
+position = Vector2(-128, 0)
+
+[node name="9" type="Node2D" parent="Positions"]
+position = Vector2(-128, -128)
+
+[node name="TilesContainer" type="Node2D" parent="."]

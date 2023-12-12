@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyjgejbv8vrm"]
+
+[ext_resource type="Script" path="res://components/four_direction_detector.gd" id="1_txop0"]
+
+[node name="FourDirectionDetector" type="Node2D"]
+script = ExtResource("1_txop0")

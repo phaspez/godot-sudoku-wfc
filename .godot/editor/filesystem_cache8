@@ -1,0 +1,7 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1702376276
+icon.svg::CompressedTexture2D::2817601143128044417::1702376139::1702376147::1::::<><>::
+::res://components/::1702376327
+grid_number.tscn::PackedScene::3156162369193305432::1702376396::0::1::::<><>::
+grid_detector.tscn::PackedScene::3508799088716352527::1702376430::0::1::::<><>::res://components/grid_detector.gd
+grid_detector.gd::GDScript::-1::1702376430::0::1::::GridDetector<>Area2D<>::

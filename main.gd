@@ -32,7 +32,6 @@ func _ready():
 	await get_tree().physics_frame
 
 
-
 func get_all_tiles():
 	for grid3x3:Grid3x3 in complete_grid.get_children():
 		for tile:GridTile in grid3x3.children:
